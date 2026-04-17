@@ -2,7 +2,7 @@
 
 Unity 6 reference implementation and benchmark harness for the paper:
 
-> M. A. Ala'anzy and O. Bazarkhan, "Deformation-Aware BVH Updates via Kinetic Extreme Vertex Tracking for Real-Time Soft-Body Simulation," *IEEE Access*, 2026. DOI: `10.1109/ACCESS.20XX.XXXXXXX` (pending).
+> M. A. Ala'anzy and O. Bazarkhan, "Deformation-Aware BVH Updates via Kinetic Extreme Vertex Tracking for Real-Time Soft-Body Simulation," *IEEE Access*, 2026. Paper DOI: `10.1109/ACCESS.20XX.XXXXXXX` (pending). Code archive: https://doi.org/10.5281/zenodo.19632040.
 
 This repository contains four BVH update strategies implemented end-to-end in C# inside Unity 6, along with the benchmark harness that produced every figure and table in Section IV of the paper.
 
@@ -21,7 +21,7 @@ Three baselines are also included, each reimplemented faithfully against the ori
 
 ## Repository layout
 
-```
+```text
 Assets/
   Scripts/               BVH updaters, tree, benchmark harness
   Scripts/Editor/        Custom inspectors for the benchmark components
@@ -43,7 +43,7 @@ No external packages are required beyond those pinned in `Packages/manifest.json
 
 1. Clone the repository:
 ```bash
-   git clone https://github.com/olzhasbazarkhan/deformation-aware-bvh.git
+   git clone [https://github.com/o1a2h/deformation-aware-bvh.git](https://github.com/o1a2h/deformation-aware-bvh.git)
 ```
 2. Open `deformation-aware-bvh/` in Unity Hub → **Add project from disk**.
 3. Open the benchmark scene at `Assets/Scenes/Benchmark.unity`.
@@ -66,7 +66,7 @@ To run the full matrix used in the paper, select the `GlobalBenchmark` component
 
 The default output directory is configured at the top of `GlobalBenchmark.cs`; edit the `saveDirectory` field before running. Expect approximately 2–3 hours on the hardware reported in the paper.
 
-The CSV outputs are then processed by the Jupyter notebooks in [`analysis/`](analysis/) (if you include them) to produce the figures in Section IV of the paper.
+The CSV outputs are then processed by the Jupyter notebooks in `Assets/Benchmark/` to produce the figures in Section IV of the paper.
 
 ## Hardware used in the paper
 
@@ -78,17 +78,19 @@ The CSV outputs are then processed by the Jupyter notebooks in [`analysis/`](ana
 
 ## Citation
 
-If you use this code, please cite the paper:
-
+**To cite the paper:**
 ```bibtex
 @article{alaanzy2026deformation,
   title   = {Deformation-Aware {BVH} Updates via Kinetic Extreme Vertex Tracking for Real-Time Soft-Body Simulation},
   author  = {Ala'anzy, Mohammed Alaa and Bazarkhan, Olzhas},
   journal = {IEEE Access},
   year    = {2026},
-  note    = {Code: \url{https://github.com/olzhasbazarkhan/deformation-aware-bvh}}
+  note    = {Code: \url{[https://github.com/o1a2h/deformation-aware-bvh](https://github.com/o1a2h/deformation-aware-bvh)}}
 }
 ```
+
+**To cite the code/benchmark directly:**
+> Ala'anzy, M. A., & Bazarkhan, O. (2026). Deformation-Aware BVH Updates via Kinetic Extreme Vertex Tracking (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.19632040
 
 ## License
 
@@ -102,3 +104,4 @@ The Chinese Dragon mesh redistributed under `Assets/Mesh/` is from the Computer 
 - Olzhas Bazarkhan — `olzhasbazarkhan@gmail.com`
 
 Issues and pull requests are welcome.
+```
