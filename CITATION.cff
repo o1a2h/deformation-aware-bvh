@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite our paper and this repository."
+title: "Deformation-Aware BVH Updates via Kinetic Extreme Vertex Tracking"
+authors:
+  - family-names: "Ala'anzy"
+    given-names: "Mohammed Alaa"
+    affiliation: "SDU University"
+    email: "m.alanzy@ieee.org"
+  - family-names: "Bazarkhan"
+    given-names: "Olzhas"
+    affiliation: "SDU University"
+    email: "olzhasbazarkhan@gmail.com"
+version: "1.0.0"
+date-released: "2026-04-17"
+license: MIT
+repository-code: "https://github.com/olzhasbazarkhan/deformation-aware-bvh"
+preferred-citation:
+  type: article
+  title: "Deformation-Aware BVH Updates via Kinetic Extreme Vertex Tracking for Real-Time Soft-Body Simulation"
+  authors:
+    - family-names: "Ala'anzy"
+      given-names: "Mohammed Alaa"
+    - family-names: "Bazarkhan"
+      given-names: "Olzhas"
+  journal: "IEEE Access"
+  year: 2026
+  publisher:
+    name: "IEEE"
